@@ -1,14 +1,16 @@
 # ECE 143 - Individual Project
 
-One Paragraph of project description goes here
+The goal of this project is to generate rectangular subsections of ad-hoc networks. Each rectangle is independent randomly generated on a grid. One single network cannot span the entire grid and following networks must be trimmed to maximum coverage if it intersects an existing, previous network. This project can support a 10x10 grid as well as any other dimension specified by the user by changing parameters in the code.
+
+A detailed explaination and answers to questions will be documented below. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The project contains one Jupyter notebook that can run out of the box.
 
 ### Prerequisites
 
-This project uses the libraries random, matplotlib.pyplot, and matplotlib.patches
+This project uses the libraries random, matplotlib.pyplot, and matplotlib.patches.
 
 ```
 import random
@@ -40,13 +42,6 @@ Give an example
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
 
 ## Authors
 
