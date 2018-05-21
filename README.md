@@ -34,7 +34,7 @@ Give an example
 
 ## Trade-Offs and Limitations
 
-Add additional notes about how to deploy this on a live system
+To check whether or not 
 
 ## Analysis
 
