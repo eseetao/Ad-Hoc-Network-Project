@@ -6,7 +6,7 @@ A detailed explaination and answers to questions will be documented below.
 
 ## Getting Started
 
-The project contains one Jupyter notebook that can run out of the box.
+The project contains one Jupyter notebook.
 
 ### Prerequisites
 
@@ -23,7 +23,8 @@ import matplotlib.patches as patches
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+
+### Discussion
 
 Explain what these tests test and why
 
@@ -31,17 +32,14 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
+## Trade-Offs and Limitations
 
 Add additional notes about how to deploy this on a live system
+
+## Analysis
+
+Questions:
+1. 
 
 ## Authors
 
