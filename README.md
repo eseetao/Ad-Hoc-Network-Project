@@ -43,11 +43,17 @@ Questions:
 1. Given an overall desired coverage footprint and a sequence of n communications
 towers, what is the resulting resolved coverage?
 
+- blah
+
 2. What is the total area of coverage relative to the desired total coverage area of the
 original footprint? That is, are there any gaps in coverage?
 
+- blah
+
 3. On average, how many communications towers are required before full coverage is
 obtained?
+
+- blah
 
 ## Authors
 
