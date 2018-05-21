@@ -53,7 +53,7 @@ original footprint? That is, are there any gaps in coverage?
 3. On average, how many communications towers are required before full coverage is
 obtained?
 
-- blah
+- It takes an average of 29 rectangles to fill a plot of 10 x 10.
 
 ## Authors
 
