@@ -40,27 +40,45 @@ Expanding on the previous explaination of the trim_rectangle function, we will e
 For reference, each rectangle's vertices will be referred to as
 
 C ---- D
+
 |      |
+
 A ---- B
 
 There are 8 cases to consider:
 
 -If new A is within previous rectangle
+
 -If new B is within previous rectangle
+
 -If new C is within previous rectangle
+
 -If new D is within previous rectangle
+
 -If new top/bottom protrudes out of previous rectangle
+
 following subcases:
+
 -check top and bottom protrudes
+
 -check top protrudes and bottom is within previous rectangle
+
 -check bottom protrudes and top is within previous rectangle
+
 -If new left/right protrudes out of previous rectangle
+
 following subcases:
+
 -check left and right protrudes
+
 -check left protrudes and right is within previous rectangle
+
 -check right protrudes and left is within previous rectangle
+
 -If entire rectangle is contained within previous rectangle
+
 -If entire rectangle encompasses previous rectangle
+
 
 ### The plots of varying dimensions are shown in the figures below:
 
