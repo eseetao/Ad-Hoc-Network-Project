@@ -34,6 +34,10 @@ This check method is more efficient than another approach of using a sliding 1 x
 
 ## Analysis
 
+It is interesting to note that when plotting the total area vs the average number of rectangles, it is somewhat linear. This is probably due to the probability distribution being uniform that corresponds to the linearity of the area vs average number of rectangles. The figure below shows the plot of the relationship. 
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/AreaVsRectangles.png)
+
 Questions:
 
 1. Given an overall desired coverage footprint and a sequence of n communications
