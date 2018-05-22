@@ -20,13 +20,18 @@ import matplotlib.patches as patches
 
 ## Discussion
 
-Explain what these tests test and why
+The main technical challenge of this project is getting the currently generated rectangle to trim based on overlap with other previous rectangles. 
 
-```
-Give an example
-```
+
+The plots of varying dimensions are shown in the figures below. 
+
+10 x 10
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/10x10 plot.png)
+
 
 ## Trade-Offs and Limitations
+
+The method of trimming a current rectangle based on previous rectangles is far more efficient than trimming the rectangle based on a conglomerate polygon of all previous rectangles' area summed. This alternative approach would combine all the areas of the previous rectangles into a polygon and use that to determine the trim boundaries of the current rectangle. However, this approach can get confusing and difficult, especially when the randomly generated rectangles create a polygon with multiple protrusions and concavities. 
 
 In order to determine when the plot is filled and stop generating rectangles, we create a set of rectangle plots. We trim the rectangle plots and trim them to check if the entire plot is filled. The basic idea is that if the entire plot is filled, any next generated rectangle should be trimmed to have a height or width of 0. If this is the case, we should break the loop to stop generating rectangles.
 
