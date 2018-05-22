@@ -54,6 +54,12 @@ original footprint? That is, are there any gaps in coverage?
 obtained?
 
 - For a 10 x 10 plot, it takes an average of 31 rectangles to fill the entire plot. 
+- For a 2 x 5 plot, it takes an average of 6 rectangles to fill the entire plot. 
+- For a 15 x 10 plot, it takes an average of 39 rectangles to fill the entire plot. 
+- For a 8 x 7 plot, it takes an average of 21 rectangles to fill the entire plot. 
+- For a 30 x 10 plot, it takes an average of 55 rectangles to fill the entire plot. 
+- For a 20 x 20 plot, it takes an average of 72 rectangles to fill the entire plot. 
+
 
 ## Authors
 
