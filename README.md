@@ -20,7 +20,7 @@ import matplotlib.patches as patches
 
 ## Discussion
 
-The main technical challenge of this project is getting the currently generated rectangle to trim based on overlap with other previous rectangles. 
+The main technical challenge of this project is getting the currently generated rectangle to trim based on overlap with other previous rectangles. The approach that this project will take is to create two main functions, generate_rectangle and trim_rectangle. 
 
 
 ### The plots of varying dimensions are shown in the figures below:
