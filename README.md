@@ -84,7 +84,14 @@ Questions:
 1. Given an overall desired coverage footprint and a sequence of n communications
 towers, what is the resulting resolved coverage?
 
-- blah
+- For a 10x10 desired coverage footprint, we sample n = 2, 4, 6, 8, and 10 towers. The resulting plot is shown below for 10x10. We can observe a linear relationship between the different number of towers. An interesting point is that for lower numbers of towers such as 2 or 4, there is slightly more coverage probably due to the fact that with a low number of randomly generated towers, there is less probability of overlap which does not take away from the intial generated area. 
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/10x10%20towers.png)
+
+Also, a plot for a 15x5 coverage area is also shown below. As we expected, it is also a linear graph.
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/15x5%20towers.png)
+
 
 2. What is the total area of coverage relative to the desired total coverage area of the
 original footprint? That is, are there any gaps in coverage?
