@@ -20,8 +20,47 @@ import matplotlib.patches as patches
 
 ## Discussion
 
-The main technical challenge of this project is getting the currently generated rectangle to trim based on overlap with other previous rectangles. The approach that this project will take is to create two main functions, generate_rectangle and trim_rectangle. 
+The main technical challenge of this project is getting the currently generated rectangle to trim based on overlap with other previous rectangles. The approach that this project will take is to create two main functions, generate_rectangle and trim_rectangle. Using a master list that contains all the parameters of the generated rectangles in the form of starting coordinates, width, and height, we generate a rectangle and compare it with previous rectangles, trimming any overlaps based on maximum resulting area. 
 
+The logic behind this is simple: comparing two rectangles, a previous and currently generated one, it will either overlap or not. If the two rectangles do not overlap, we leave the current one alone. If it does, the rectangle will fit in one of eight cases:
+- Overlap on any 4 vertices, with each of the vertices being 1 case
+- Vertical protrusions
+- Horizontal protrusions
+- Is contained within a previous rectangle
+- Envelops previous rectangle
+
+After idenfitying which case it is and trimming it, both rectangles no longer overlap. Simply sweep through the master list of rectangles, with most being non overlapping rectangles, the currently generated rectangle will be trimmed based on neighboring overlapping rectangles. Finally when sweeping through all the previous rectangles, the current rectangle will have the according valid rectangle coverage and be added to the master list of rectangles. On the chance that the rectangle does fall within at least one previous rectangle, the trimming function will trim its width or height to 0. This means that the ad-hoc network area has already been covered and the current one should not be generated on top of the area. In such cases, we will generate another rectangle to try and fill a valid nonzero area instead of placing down an ad-hoc network with 0 area.
+
+This is an extremely effective method of filling gaps using the criteria of randomly generated starting points, widths, and heights. 
+
+The fuction generate_rectangle() generates a rectangle on the plot with limits specified by user. Because the number of rectangles generated is so variable, we assign random colors to each. Width and height are of uniform distribution from 1 until the ceiling limit. If through trimming we get a rectangle that has width or height trimmed to 0, we generate another rectangle. This ensures that we do not place down a network rectangle that has no area.
+
+Expanding on the previous explaination of the trim_rectangle function, we will examine it in detail. The function trim_rectangle grabs the 3 input arguments starting_point, width, height from generate_rectangle. It then trims the current rectangle based on the cases documented below.
+
+For reference, each rectangle's vertices will be referred to as
+
+C ---- D
+|      |
+A ---- B
+
+There are 8 cases to consider:
+
+-If new A is within previous rectangle
+-If new B is within previous rectangle
+-If new C is within previous rectangle
+-If new D is within previous rectangle
+-If new top/bottom protrudes out of previous rectangle
+following subcases:
+-check top and bottom protrudes
+-check top protrudes and bottom is within previous rectangle
+-check bottom protrudes and top is within previous rectangle
+-If new left/right protrudes out of previous rectangle
+following subcases:
+-check left and right protrudes
+-check left protrudes and right is within previous rectangle
+-check right protrudes and left is within previous rectangle
+-If entire rectangle is contained within previous rectangle
+-If entire rectangle encompasses previous rectangle
 
 ### The plots of varying dimensions are shown in the figures below:
 
