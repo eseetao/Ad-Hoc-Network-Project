@@ -29,6 +29,30 @@ The main technical challenge of this project is getting the currently generated 
 
 ![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/10x10%20plot.png)
 
+1 x 1
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/1x1%20plot.png)
+
+2 x 5
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/2x5%20plot.png)
+
+8 x 7
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/8x7%20plot.png)
+
+15 x 10
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/15x10%20plot.png)
+
+30 x 10
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/30x10%20plot.png)
+
+20 x 20
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/20x20%20plot.png)
+
 
 ## Trade-Offs and Limitations
 
