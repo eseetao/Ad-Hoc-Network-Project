@@ -26,7 +26,8 @@ The main technical challenge of this project is getting the currently generated 
 The plots of varying dimensions are shown in the figures below. 
 
 10 x 10
-![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/10x10_plot.png)
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/10x10%20plot.png)
 
 
 ## Trade-Offs and Limitations
