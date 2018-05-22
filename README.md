@@ -96,7 +96,9 @@ Also, a plot for a 15x5 coverage area is also shown below. As we expected, it is
 2. What is the total area of coverage relative to the desired total coverage area of the
 original footprint? That is, are there any gaps in coverage?
 
-- blah
+- Initially with lower numbers of generated rectangles, there are definitely gaps in coverage. An example of a resulting plotted coverage for n = 8 towers on a 10x10 area is show below. Relative to the number of towers, the total area of coverage is linear, as explained above. 
+
+![alt text](https://github.com/eseetao/Individual-Project/blob/master/Images/n%3D8%20towers%20sample.png)
 
 3. On average, how many communications towers are required before full coverage is
 obtained?
