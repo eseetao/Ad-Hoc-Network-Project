@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 ```
 
-### Discussion
+## Discussion
 
 Explain what these tests test and why
 
@@ -28,7 +28,9 @@ Give an example
 
 ## Trade-Offs and Limitations
 
-To check whether or not 
+In order to determine when the plot is filled and stop generating rectangles, we create a set of rectangle plots. We trim the rectangle plots and trim them to check if the entire plot is filled. The basic idea is that if the entire plot is filled, any next generated rectangle should be trimmed to have a height or width of 0. If this is the case, we should break the loop to stop generating rectangles.
+
+This check method is more efficient than another approach of using a sliding 1 x 1 window to check if there is an empty plot. The sliding window would need 3 nested loops, 2 of which would sweep both x and y coordinates while the last loop would sweep the rectangle master list. Depending on unlucky generation of low widths and heights, this will be a very slow approach.
 
 ## Analysis
 
@@ -47,7 +49,7 @@ original footprint? That is, are there any gaps in coverage?
 3. On average, how many communications towers are required before full coverage is
 obtained?
 
-- It takes an average of 29 rectangles to fill a plot of 10 x 10.
+- For a 10 x 10 plot, it takes an average of 31 rectangles to fill the entire plot. 
 
 ## Authors
 
