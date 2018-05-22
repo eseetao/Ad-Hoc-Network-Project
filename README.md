@@ -18,12 +18,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 ```
 
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-
 ### Discussion
 
 Explain what these tests test and why
