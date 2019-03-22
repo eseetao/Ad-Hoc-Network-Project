@@ -1,4 +1,4 @@
-# ECE 143 - Individual Project
+# Ad Hoc Network Project
 
 The goal of this project is to generate rectangular subsections of ad-hoc networks. Each rectangle is independent randomly generated on a grid. One single network cannot span the entire grid and following networks must be trimmed to maximum coverage if it intersects an existing, previous network. This project can support a 10x10 grid as well as any other dimension specified by the user by changing parameters in the code.
 
